@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #container {
+            height: 1000px;
+            position: relative;
+        }
+        #header {
+            border: 1px solid black;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            background: #555;
+        }
+        #sidebar {
+            border: 1px solid black;
+            width: 30%;
+            height: 100%;
+            position: fixed;
+            top: 51px;
+        }
+        #content {
+            position: absolute;
+            border: 1px solid black;
+            width: 65%;
+            top: 51px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">fixed header</div>
+    <div id="sidebar">fixed sidebar</div>
+    <div id="content">content</div>
+</div>
+</body>
+</html>
+<script>
+    let contentEle = document.getElementById("content");
+    let string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    let content = "";
+    for (let i = 0; i < 10; i++) {
+        content = content.concat(string + "<br><br>");
+    }
+    contentEle.innerHTML = content;
+</script>
