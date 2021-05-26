@@ -1,0 +1,38 @@
+#cover-content {
+    padding: 2%;
+}
+
+#cover-image {
+    background-color: gray;
+}
+
+#cover-new {
+    background-color: yellow;
+    width: fit-content;
+    font-size: x-small;
+}
+
+#cover-link a {
+    color: darkblue;
+}
+
+#cover-image {
+    min-height: 200px;
+}
+
+#user-options {
+    margin-top: 2%;
+}
+
+#user-options img {
+    height: 20px;
+}
+
+#user-options .col-sm {
+    text-align: center;
+}
+
+#user-options a {
+    color: darkblue;
+    text-decoration: none;
+}
